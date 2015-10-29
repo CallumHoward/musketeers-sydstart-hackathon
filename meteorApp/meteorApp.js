@@ -18,28 +18,10 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
-    let data = {
-      title: 'Please build me a MEAN Stack app',
-      description: 'I want a facebook app made with the MEAN Stack, which is Mongo, Ember, Angular, and NoSQL',
-      currency: {
-        id: 1
-      },
-      budget: {
-        minimum: 1200
-      },
-      jobs: [{
-        id: 7,
-      }],
-    };
-
-    //Freelancer.Projects.create(data, Meteor.bindEnvironment(function(error, result) {
-    //  if (error) console.log(error);
-    //  console.log(result);
-    //}));
     var data = {};
-    data['projects[]'] = [12312, 41231];
+    data.projects = 3142;
 
-    Freelancer.Projects.get(data, Meteor.bindEnvironemtn(function(error, result) {
+    Freelancer.Projects.get(data, Meteor.bindEnvironment(function(error, result) {
       if (error) console.log(error);
       console.log(result);
     }));
