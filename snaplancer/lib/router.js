@@ -1,13 +1,4 @@
-// Data subscription & everything basically depends on companyId
-var COMPANYID;
-if (Meteor.settings &&
-    Meteor.settings.public &&
-    Meteor.settings.public.companyId) {
-  COMPANYID = Meteor.settings.public.companyId;
-}
-
 // Main configuration for all routes
-// Subscribe everything and load Google Maps
 Router.configure({
   layoutTemplate: 'layout',
   loadingTemplate: 'loading',
@@ -28,4 +19,8 @@ Router.route('/camera', {
 
 Router.route('/submitProject', {
   name: 'submitProject',
+});
+
+Router.route('/messages', {
+  name: 'messages',
 });
