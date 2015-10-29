@@ -7,7 +7,7 @@ Template.camera.events({
     console.log(test);
 
     var uploader = new Slingshot.Upload("myFileUploads");
-
+    console.log(uploader);
     uploader.send(test, function (error, downloadUrl) {
       console.log('hello error' + error);
       console.log('hello downlaod url' + downloadUrl);

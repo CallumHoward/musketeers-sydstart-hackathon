@@ -9,15 +9,9 @@ iron:router
 meteoric:ionic
 meteoric:ionic-sass
 meteoric:ionicons-sass
-dburles:google-maps
-mdg:geolocation
-aldeed:geocoder
 http
-accounts-password
-mrgalaxy:stripe
 ground:db
 meteorhacks:fast-render
-underscorestring:underscore.string
 momentjs:moment
 mdg:reload-on-resume
 standard-minifiers

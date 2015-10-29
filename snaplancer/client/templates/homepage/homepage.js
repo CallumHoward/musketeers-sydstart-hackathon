@@ -27,8 +27,11 @@ function captureSuccess(mediaFiles) {
   }
 
   //Testing with AWS
-  var uploader = new Slingshot.Upload("myFileUploads");
+  file = mediaFiles[0];
+  uploader = new Slingshot.Upload("myFileUploads");
+  console.log(uploader);
   uploader.send(mediaFiles[0], function (error, downloadUrl) {
+    console.log('hellos');
     console.log('hello error' + error);
     console.log('hello downlaod url' + downloadUrl);
 
@@ -37,8 +40,7 @@ function captureSuccess(mediaFiles) {
       console.error('Error uploading', uploader.xhr.response);
       alert (error);
       Router.go('submitProject');
-    }
-    else {
+    } else {
       Router.go('submitProject');
     }
   });
