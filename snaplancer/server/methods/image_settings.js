@@ -1,5 +1,5 @@
 Slingshot.fileRestrictions("myFileUploads", {
-  allowedFileTypes: ["image/avi", "image/mov", "image/mp4", "image/png" ],
+  allowedFileTypes: ["image/avi", "image/mov", "image/mp4", "image/png", "video/mov", "video/mp4" ],
   maxSize: null//
 });
 

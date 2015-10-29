@@ -19,12 +19,27 @@ Template.homepage.events({
 });
 
 function captureSuccess(mediaFiles) {
-  var path = '';
-  for (let i = 0; i < mediaFiles.length; i++) {
-    path = mediaFiles[i].fullPath;
-    console.log(path);
-  }
-  Router.go('submitProject');
+
+  //Testing with AWS
+  mediaFile = mediaFiles[0];
+  file = new File('new_file', mediaFile.localURL, mediaFile.type, mediaFile.lastModifiedDate, mediaFile.size);
+
+  uploader = new Slingshot.Upload("myFileUploads");
+  console.log(uploader);
+  uploader.send(file, function (error, downloadUrl) {
+    console.log('hellos');
+    console.log('hello error' + error);
+    console.log('hello downlaod url' + downloadUrl);
+
+    if (error) {
+      // Log service detailed response
+      console.error('Error uploading', uploader.xhr.response);
+      alert (error);
+      //Router.go('submitProject');
+    } else {
+      //Router.go('submitProject');
+    }
+  });
 }
 
 function captureError(error) {

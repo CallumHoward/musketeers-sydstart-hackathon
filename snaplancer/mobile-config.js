@@ -6,13 +6,6 @@
 
 
 //Allow Google files and google maps to work on phone app
-App.accessRule('https://*.googleapis.com/*');
-App.accessRule('https://*.google.com/*');
-App.accessRule('https://*.gstatic.com/*');
-App.accessRule('https://*.stripe.com/*');
-App.accessRule("http://app.thrivetide.com");
-App.accessRule("http://s3-ap-southeast-2.amazonaws.com/staticassetspasha/*");
-App.accessRule("http://pigeoncompanyhubapha.meteor.com");
 App.accessRule("*");
 
 // Set PhoneGap/Cordova preferences
