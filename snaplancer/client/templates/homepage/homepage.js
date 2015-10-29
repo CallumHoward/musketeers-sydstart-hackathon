@@ -22,6 +22,7 @@ function captureSuccess(mediaFiles) {
   var path = '';
   for (let i = 0; i < mediaFiles.length; i++) {
     path = mediaFiles[i].fullPath;
+    console.log(mediaFiles[i]);
     console.log(path);
   }
   Router.go('submitProject');
