@@ -32,3 +32,12 @@ function captureError(error) {
   console.log('Error capturing media!!!');
   console.log(error);
 }
+
+function onSuccessFileUpload(email, fileUrl) {
+  // Slingshot successfully uploaded the file to S3
+  // Save to database
+  Projects.insert({email: email, fileUrl: fileUrl});
+
+  // Post project to freelancer
+  //Meteor.call('freelancer/createProject',
+}

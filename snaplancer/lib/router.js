@@ -1,4 +1,3 @@
-// Main configuration for all routes
 Router.configure({
   layoutTemplate: 'layout',
   loadingTemplate: 'loading',
