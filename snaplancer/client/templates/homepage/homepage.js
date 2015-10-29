@@ -1,7 +1,3 @@
-Template.homepage.helpers({
-
-});
-
 Template.homepage.events({
   'click a.link-hire': function(e) {
     e.preventDefault();
@@ -9,49 +5,40 @@ Template.homepage.events({
     if (Meteor.isCordova) {
       // Open camera to take 13 seconds video
       navigator.device.capture.captureVideo(captureSuccess, captureError, {
-        limit: 1, duration: 13
+        limit: 1, duration: 180
       });
+
     } else {
       console.log('Not on mobile, no camera');
-      //TODO: Remove this asfter testing
     }
   },
+  'click .snaplancer': function(e) {
+    e.preventDefault();
+    var dataId = $(e.target).data('id');
+
+    // Hide previous
+    $('#'+Session.get('currentlyExpanded')).slideUp('fast');
+
+    // Dont expand anything if user clicks on already expanded field
+    if (Session.get('currentlyExpanded') === dataId) {
+      delete Session.keys.currentlyExpanded;
+      return;
+    }
+
+    // Expand new one
+    $('#'+dataId).slideDown('fast');
+    Session.set('currentlyExpanded', dataId);
+  }
 });
 
 function captureSuccess(mediaFiles) {
-
-  //Testing with AWS
   mediaFile = mediaFiles[0];
-  file = new File('new_file', mediaFile.localURL, mediaFile.type, mediaFile.lastModifiedDate, mediaFile.size);
-
-  uploader = new Slingshot.Upload("myFileUploads");
-  console.log(uploader);
-  uploader.send(file, function (error, downloadUrl) {
-    console.log('hellos');
-    console.log('hello error' + error);
-    console.log('hello downlaod url' + downloadUrl);
-
-    if (error) {
-      // Log service detailed response
-      console.error('Error uploading', uploader.xhr.response);
-      alert (error);
-      //Router.go('submitProject');
-    } else {
-      //Router.go('submitProject');
-    }
-  });
+  // Set MediaFile to Session and go to next screen
+  Session.set('mediaFile', mediaFile);
+  Router.go('submitProject');
 }
 
 function captureError(error) {
   console.log('Error capturing media!!!');
   console.log(error);
-}
-
-function onSuccessFileUpload(email, fileUrl) {
-  // Slingshot successfully uploaded the file to S3
-  // Save to database
-  Projects.insert({email: email, fileUrl: fileUrl});
-
-  // Post project to freelancer
-  //Meteor.call('freelancer/createProject',
 }

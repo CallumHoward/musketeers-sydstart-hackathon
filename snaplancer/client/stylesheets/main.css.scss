@@ -12,6 +12,11 @@ $main-color: #F5AE23;
 @import 'client/stylesheets/meteoric_ionic-sass/ionic';
 @import 'client/stylesheets/meteoric_ionicons-sass/ionicons';
 
+.ionic-body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+
 //Container for map on Map Tracking Page
 .map-container {
   width: 100%;
@@ -40,5 +45,9 @@ a {
 }
 
 .bar {
-  
+
+}
+
+.button.button-block, .button.button-full {
+  margin-top: 0px;
 }

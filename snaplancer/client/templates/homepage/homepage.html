@@ -1,4 +1,9 @@
 <template name="homepage">
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{> ionIcon icon='navicon'}}
+    </button>
+  {{/contentFor}}
   {{!-- HEADER --}}
   {{#contentFor "headerTitle"}}
     <h1 class="title font-title color-on-primary">SnapLancer</h1>
@@ -7,6 +12,7 @@
   {{!-- CONTENT --}}
   {{#ionView}}
     {{#ionContent}}
+
 
         <div class="snaplancer sgeneral">
           <div class="snap-text">
@@ -18,17 +24,27 @@
               - Use simple language
             </div>
           </div>
+
+        </div>
+        <div id="general" class="general expandables" style="display: none">
+          <h1 style="margin: 0px">This is the hidden text</h1>
         </div>
 
-        <div class="snaplancer localjobs">
+        <div class="snaplancer localjobs" data-id="localjobs">
           <a href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
         </div>
-
-        <div class="snaplancer buildmystartup">
-          <a href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
+        <div id="localjobs" class="localjobs expandables" style="display: none">
+          <h1 style="margin: 0px">This is the hidden text</h1>
         </div>
 
-        <div class="snaplancer designers">
+        <div class="snaplancer buildmystartup" data-id="buildmystartup">
+          <a href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
+        </div>
+        <div id="buildmystartup" class="buildmystartup expandables" style="display: none">
+          <h1 style="margin: 0px">This is the hidden text</h1>
+        </div>
+
+        <div class="snaplancer designers" data-id="designers">
           <a href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
         </div>
 
