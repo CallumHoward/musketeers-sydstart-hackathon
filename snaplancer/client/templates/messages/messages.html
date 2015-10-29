@@ -1,4 +1,14 @@
 <template name="messages">
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{> ionIcon icon='navicon'}}
+    </button>
+  {{/contentFor}}
+
+  {{!-- HEADER --}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title font-title color-on-primary">Messages</h1>
+  {{/contentFor}}
   {{!-- CONTENT --}}
   {{#ionView}}
     {{#ionContent}}
