@@ -18,14 +18,14 @@ function captureSuccess(mediaFiles) {
   mediaFile = mediaFiles[0];
 
   Uploader = new Slingshot.Upload("myFileUploads");
-  Uploader.send(file, function (error, downloadUrl) {
+  Uploader.send(mediaFile, function (error, downloadUrl) {
     if (error) {
       console.error('Error uploading', uploader.xhr.response);
       alert (error);
       return;
     }
 
-    Session.set('mediaFile', mediaFile);
+    Session.set('fileUrl', fileUrl);
     Router.go('submitProject');
   });
 }
