@@ -1,0 +1,34 @@
+.message {
+  padding: 10px;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.message-left {
+  background-color: #e3e3e3;
+  color: black;
+  border-radius: 0px 10px 10px 10px;
+  margin-right: 160px;
+  margin-left: 10px;
+}
+
+.message-right {
+  background-color: #4A90E2;
+  color: white;
+  border-radius: 10px 10px 0px 10px;
+  margin-right: 10px;
+  margin-left: 160px;
+}
+
+.message-input {
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
+  padding: 10px;
+}
+
+.messages-container {
+  overflow-y: auto;
+  margin-bottom: 50px !important;
+}

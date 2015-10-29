@@ -23,3 +23,7 @@ Router.route('/submitProject', {
 Router.route('/messages', {
   name: 'messages',
 });
+
+Router.route('/recruiter', {
+  name: 'recruiter',
+});

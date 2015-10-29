@@ -1,0 +1,28 @@
+<template name="recruiter">
+  {{!-- CONTENT --}}
+  {{#ionView}}
+    {{#ionContent}}
+      <div id="msg-container-r" class="messages-container">
+        <ol class="list">
+          {{#each getMessages}}
+            {{#if isUser}}
+              <li class="message message-right">{{content}}</li>
+            {{/if}}
+            {{#unless isUser}}
+              <li class="message message-left">{{content}}</li>
+            {{/unless}}
+          {{/each}}
+        </ol>
+      </div>
+
+    {{/ionContent}}
+      <form>
+        <div class="bar bar-footer item-input-inset">
+          <label class="item-input-wrapper">
+            <input id="message-input-r" type="text" placeholder="Type a message..." />
+          </label>
+          <button id="message-submit-r" class="button-clear">Send</button>
+        </div>
+      </form>
+  {{/ionView}}
+</template>
