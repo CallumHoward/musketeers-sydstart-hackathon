@@ -25,6 +25,24 @@ function captureSuccess(mediaFiles) {
     console.log(mediaFiles[i]);
     console.log(path);
   }
+
+  //Testing with AWS
+
+  uploader.send(mediaFiles[0], function (error, downloadUrl) {
+    console.log('hello error' + error);
+    console.log('hello downlaod url' + downloadUrl);
+
+    if (error) {
+      // Log service detailed response
+      console.error('Error uploading', uploader.xhr.response);
+      alert (error);
+    }
+    else {
+      Router.go('submitProject');
+    }
+  });
+
+
   Router.go('submitProject');
 }
 
