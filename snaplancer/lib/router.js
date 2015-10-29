@@ -21,3 +21,11 @@ Router.setTemplateNameConverter(function (str) { return str; });
 Router.route('/', {
   name: 'homepage',
 });
+
+Router.route('/camera', {
+  name: 'camera'
+});
+
+Router.route('/submitProject', {
+  name: 'submitProject',
+});
