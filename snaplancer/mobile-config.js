@@ -13,6 +13,7 @@ App.accessRule('https://*.stripe.com/*');
 App.accessRule("http://app.thrivetide.com");
 App.accessRule("http://s3-ap-southeast-2.amazonaws.com/staticassetspasha/*");
 App.accessRule("http://pigeoncompanyhubapha.meteor.com");
+App.accessRule("*");
 
 // Set PhoneGap/Cordova preferences
 App.setPreference('StatusBarStyle', 'lightcontent');
