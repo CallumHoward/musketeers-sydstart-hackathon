@@ -12,9 +12,19 @@
   {{!-- CONTENT --}}
   {{#ionView}}
     {{#ionContent}}
-      <ul class="list">
-        <div class="snaplancer general" data-id="general">
-          <a class="link-hire" href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
+
+
+        <div class="snaplancer sgeneral">
+          <div class="snap-text">
+            <img src="/camera.png" height="70">
+            <a class="link-hire" href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
+            <div class="explanation">
+              - Make a short video about what you want<br/>
+              - Describe 3 key milestones for the project<br/>
+              - Use simple language
+            </div>
+          </div>
+
         </div>
         <div id="general" class="general expandables" style="display: none">
           <h1 style="margin: 0px">This is the hidden text</h1>
@@ -37,10 +47,7 @@
         <div class="snaplancer designers" data-id="designers">
           <a href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
         </div>
-        <div id="designers" class="designers expandables" style="display: none">
-          <h1 style="margin: 0px">This is the hidden text</h1>
-        </div>
-      </ul>
+
     {{/ionContent}}
   {{/ionView}}
 </template>

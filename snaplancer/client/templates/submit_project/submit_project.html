@@ -1,13 +1,35 @@
 <template name="submitProject">
   {{!-- CONTENT --}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title font-title color-on-primary">Upload pitch</h1>
+  {{/contentFor}}
+
   {{#ionView}}
     {{#ionContent}}
 
-    <div id="user-info-form" class="list">
-      <label class="item item-input">
-        <input id="email-input" type="email" placeholder="Email..." required/>
-      </label>
-      <button class="button icon-right ion-ios-arrow-forward create-project">next </button>
+    <div class="submit-page">
+
+      <div class="submit-info">
+        <h3> Nearly There! </h3>
+        <hr/>
+        <br/>
+        <img src="/smileheart.png" height="50" style="text-align: center;">
+        <br/>
+        <br/>
+        <div class="submit-description">
+
+          Theres something interesting about this thing because its about to become a real thing for you
+        </div>
+
+
+      </div>
+      <div id="user-info-form" class="list">
+        <label class="item item-input">
+          <input id="email-input" type="email" placeholder="Email..." required/>
+        </label>
+        <button class="button button-full button-balanced icon-right ion-ios-arrow-forward create-project">next </button>
+      </div>
     </div>
 
     {{/ionContent}}
