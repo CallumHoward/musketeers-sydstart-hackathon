@@ -1,5 +1,5 @@
 Template.homepage.helpers({
-  
+
 });
 
 Template.homepage.events({
@@ -13,6 +13,7 @@ Template.homepage.events({
       });
     } else {
       console.log('Not on mobile, no camera');
+      //TODO: Remove this asfter testing
     }
   },
 });

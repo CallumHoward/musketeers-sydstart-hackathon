@@ -19,3 +19,7 @@ Router.route('/camera', {
 Router.route('/submitProject', {
   name: 'submitProject',
 });
+
+Router.route('/messages', {
+  name: 'messages',
+});
