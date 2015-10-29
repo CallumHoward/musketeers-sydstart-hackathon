@@ -5,7 +5,7 @@ Template.homepage.events({
     if (Meteor.isCordova) {
       // Open camera to take 13 seconds video
       navigator.device.capture.captureVideo(captureSuccess, captureError, {
-        limit: 1, duration: 13
+        limit: 1, duration: 180
       });
 
     } else {
@@ -16,18 +16,9 @@ Template.homepage.events({
 
 function captureSuccess(mediaFiles) {
   mediaFile = mediaFiles[0];
-
-  Uploader = new Slingshot.Upload("myFileUploads");
-  Uploader.send(file, function (error, downloadUrl) {
-    if (error) {
-      console.error('Error uploading', uploader.xhr.response);
-      alert (error);
-      return;
-    }
-
-    Session.set('mediaFile', mediaFile);
-    Router.go('submitProject');
-  });
+  // Set MediaFile to Session and go to next screen
+  Session.set('mediaFile', mediaFile);
+  Router.go('submitProject');
 }
 
 function captureError(error) {

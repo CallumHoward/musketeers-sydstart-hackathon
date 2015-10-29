@@ -10,10 +10,8 @@ meteoric:ionic
 meteoric:ionic-sass
 meteoric:ionicons-sass
 http
-ground:db
 meteorhacks:fast-render
 momentjs:moment
-mdg:reload-on-resume
 standard-minifiers
 meteor-base
 mobile-experience
@@ -31,3 +29,4 @@ check
 ecmascript
 tendo:freelancer-meteor
 edgee:slingshot
+insecure
