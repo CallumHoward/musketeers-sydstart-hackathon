@@ -1,0 +1,53 @@
+{
+  "builtBy": "meteor/17",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/akur/Projects/_others/musketeers-sydstart-hackathon/meteorApp/packages/freelancer-meteor/package.js": "3866712357eeb02742dc03c673628c795a83fe14",
+        "/Users/akur/Projects/_others/musketeers-sydstart-hackathon/meteorApp/packages/freelancer-meteor/.npm/package/npm-shrinkwrap.json": "054214808b0ad536a8d233c7000c7cdc47aea82f",
+        "/Users/akur/Projects/_others/musketeers-sydstart-hackathon/meteorApp/packages/freelancer-meteor/freelancer-meteor.js": "fd919a893e19806b02cb2b8c0c30faed81a63e2c"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/akur/Projects/_others/musketeers-sydstart-hackathon/meteorApp/packages/freelancer-meteor/package.js": "3866712357eeb02742dc03c673628c795a83fe14",
+        "/Users/akur/Projects/_others/musketeers-sydstart-hackathon/meteorApp/packages/freelancer-meteor/.npm/package/npm-shrinkwrap.json": "054214808b0ad536a8d233c7000c7cdc47aea82f"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/akur/Projects/_others/musketeers-sydstart-hackathon/meteorApp/packages/freelancer-meteor/package.js": "3866712357eeb02742dc03c673628c795a83fe14"
+    },
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "tendo:freelancer-meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/akur/Projects/_others/musketeers-sydstart-hackathon/meteorApp/packages/freelancer-meteor"
+    },
+    "meteor": {
+      "kind": "versioned",
+      "version": "1.1.10"
+    },
+    "ecmascript": {
+      "kind": "versioned",
+      "version": "0.1.6"
+    },
+    "babel-runtime": {
+      "kind": "versioned",
+      "version": "0.1.4"
+    },
+    "ecmascript-runtime": {
+      "kind": "versioned",
+      "version": "0.2.6"
+    },
+    "promise": {
+      "kind": "versioned",
+      "version": "0.5.1"
+    }
+  },
+  "includeCordovaUnibuild": false
+}
