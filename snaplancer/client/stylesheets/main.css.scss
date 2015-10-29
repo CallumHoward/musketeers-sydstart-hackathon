@@ -6,7 +6,7 @@
 
 
 //Set global variable values
-$main-color: #1c6ea5;
+$main-color: #F5AE23;
 
 //Import core ionic files
 @import 'client/stylesheets/meteoric_ionic-sass/ionic';
@@ -30,3 +30,15 @@ a {
   items below
 
 *******************************************************/
+
+.color-primary {
+  background-color: $main-color;
+}
+
+.title {
+  color: white;
+}
+
+.bar {
+  
+}

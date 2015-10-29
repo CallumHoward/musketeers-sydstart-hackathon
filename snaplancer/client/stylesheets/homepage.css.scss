@@ -1,18 +1,23 @@
-
+@import 'mixins.css.scss';
 
 .snaplancer {
   background-color: rgb(255, 214, 0);
-  padding: 20px;
+  padding: 40px 20px 20px;
   text-align: center;
-  min-height: 200px;
+  min-height: 60%;
   color: white !important;
+
 }
 
-.sgneral {
-  background-color: rgb(255, 214, 0);
+.snap-text {
+  height: 100%;
 }
 
-.localjobs {
+.sgeneral {
+  background-color: #F5AE23;
+}
+
+.localjobs   {
   background-color: #4A90E2;
 }
 
@@ -28,9 +33,15 @@
   a {
     color: white;
   }
-  font-size: 25px;
+  font-size: 24px;
   line-height: 30px;
   color: white;
   font-weight: 900;
 
+}
+
+.explanation {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
 }

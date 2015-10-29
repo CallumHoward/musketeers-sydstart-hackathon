@@ -1,0 +1,25 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin bg-transition-ease {
+  -webkit-transition: background .3s ease;
+  -moz-transition: background .3s ease;
+  transition: background .3s ease;
+}
+
+@mixin image-background {
+  background: url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.vertical-align {
+  @include vertical-align;
+}
