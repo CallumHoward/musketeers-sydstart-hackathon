@@ -36,10 +36,10 @@ if (Meteor.isServer) {
     //  if (error) console.log(error);
     //  console.log(result);
     //}));
-    var data = {};
+    // var data = {};
     data['projects[]'] = [12312, 41231];
 
-    Freelancer.Projects.get(data, Meteor.bindEnvironemtn(function(error, result) {
+    Freelancer.Projects.get(data, Meteor.bindEnvironment(function(error, result) {
       if (error) console.log(error);
       console.log(result);
     }));

@@ -19,3 +19,18 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 tendo:freelancer-meteor
+
+fourseven:scss
+iron:router
+meteoric:ionic
+meteoric:ionic-sass
+meteoric:ionicons-sass
+dburles:google-maps
+mdg:geolocation
+aldeed:geocoder
+http
+momentjs:moment
+accounts-password
+ground:db
+underscorestring:underscore.string
+meteorhacks:subs-manager
