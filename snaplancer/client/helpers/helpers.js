@@ -7,3 +7,4 @@ Helpers.postProjectToFreelancer = function(email, fileUrl) {
     console.log(res);
   });
 }
+
