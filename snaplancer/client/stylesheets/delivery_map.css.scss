@@ -1,0 +1,55 @@
+/* Mixin */
+@mixin half-button() {
+  width:50%;
+  height:100%;
+  padding:20px;
+  display: inline-block;
+  float:left;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+}
+
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* main */
+
+.full-content {
+  height: 100%;
+  position: relative;
+}
+
+.map-area {
+  height: 100%;
+}
+
+
+.checkmap-container{
+  height: 100%;
+  width: 100%;
+}
+
+.accept-button{
+  background-color: rgb(166, 221, 37);
+  @include half-button();
+  @include vertical-align;
+
+
+}
+
+.reject-button{
+  background-color: rgb(198, 22, 22);
+  @include half-button();
+  @include vertical-align;
+}
+
+.vertical-align{
+  @include vertical-align;
+}
