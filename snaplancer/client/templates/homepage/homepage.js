@@ -25,7 +25,7 @@ function captureSuccess(mediaFiles) {
       return;
     }
 
-    Session.set('fileUrl', fileUrl);
+    Session.set('fileUrl', downloadUrl);
     Router.go('submitProject');
   });
 }
