@@ -23,7 +23,7 @@ function captureSuccess(mediaFiles) {
     path = mediaFiles[i].fullPath;
     console.log(path);
   }
-  Router.go('camera');
+  Router.go('submitProject');
 }
 
 function captureError(error) {
