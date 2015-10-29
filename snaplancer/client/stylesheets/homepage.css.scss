@@ -4,7 +4,8 @@
   background-color: rgb(255, 214, 0);
   padding: 40px;
   text-align: center;
-  height: 400px;
+  min-height: 200px;
+  color:  white;
 }
 
 .sgneral {
@@ -12,5 +13,13 @@
 }
 
 .localjobs {
-background-color: rgb(255, 214, 0);
+  background-color: #4A90E2;
+}
+
+.buildmystartup {
+  background-color: #7ED321;
+}
+
+.designers {
+  background-color: #D0021B;
 }
