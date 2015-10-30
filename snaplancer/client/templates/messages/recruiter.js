@@ -12,11 +12,26 @@ Template.recruiter.events({
     });
   },
 
+  'click #image-submit-r': function(e) {
+    e.preventDefault();
+
+    var imgurl = "https://d13yacurqjgara.cloudfront.net/users/643952/screenshots/2322985/logo_dribbble.jpg"
+
+    Messages.insert({
+      type: 'image',
+      from: 'recruiter',
+      timestamp: '123',
+      content: imgurl
+    });
+  },
 });
 
 Template.recruiter.helpers({
   isUser: function () {
     return this.from === 'user';
+  },
+  isImage: function () {
+    return this.type === 'image';
   },
   getMessages: function () {
     return Messages.find().fetch();

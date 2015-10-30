@@ -32,3 +32,26 @@
   overflow-y: auto;
   margin-bottom: 50px !important;
 }
+
+.messages-image {
+  height: 75;
+}
+
+.messages-bool {
+  border-top-width: 1px;
+  border-top-color: lightgrey;
+  border-top-style: solid;
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+}
+
+.messages-green {
+  color: green;
+  padding: 5px;
+}
+
+.messages-red {
+  color: red;
+  padding: 5px;
+}
