@@ -1,6 +1,7 @@
 Template.homepage.events({
-  'click a.link-hire': function(e) {
+  'click .link-general': function(e) {
     e.preventDefault();
+    e.stopPropagation();
 
     if (Meteor.isCordova) {
       // Open camera to take 13 seconds video
@@ -12,12 +13,14 @@ Template.homepage.events({
       console.log('Not on mobile, no camera');
     }
   },
-  'click .snaplancer': function(e) {
+
+
+  'click .snaplancer, click .expandables': function(e) {
     e.preventDefault();
     var dataId = $(e.target).data('id');
 
     // Hide previous
-    $('#'+Session.get('currentlyExpanded')).slideUp('fast');
+    $('.expandables.'+Session.get('currentlyExpanded')).slideUp('fast');
 
     // Dont expand anything if user clicks on already expanded field
     if (Session.get('currentlyExpanded') === dataId) {
@@ -26,7 +29,7 @@ Template.homepage.events({
     }
 
     // Expand new one
-    $('#'+dataId).slideDown('fast');
+    $('.expandables.'+dataId).slideDown('fast');
     Session.set('currentlyExpanded', dataId);
   }
 });

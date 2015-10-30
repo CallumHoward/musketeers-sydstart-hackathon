@@ -13,39 +13,80 @@
   {{#ionView}}
     {{#ionContent}}
 
-
-        <div class="snaplancer sgeneral">
-          <div class="snap-text">
-            <img src="/camera.png" height="70">
-            <a class="link-hire" href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
-            <div class="explanation">
-              - Make a short video about what you want<br/>
-              - Describe 3 key milestones for the project<br/>
-              - Use simple language
-            </div>
+        <!-- General -->
+        <div class="snaplancer snap-title general" data-id="general" style="padding-top:30px">
+          <img src="/camera.png" height="70" class="expandables general" style="display: none">
+          <br/>
+          Hire a SnapLancer
+        </div>
+        <div class="expandables general" style="display: none" data-id="general">
+          <div class="explanation">
+            - Make a short video about what you want<br/>
+            - Describe 3 key milestones for the project<br/>
+            - Use simple language
           </div>
-
-        </div>
-        <div id="general" class="general expandables" style="display: none">
-          <h1 style="margin: 0px">This is the hidden text</h1>
-        </div>
-
-        <div class="snaplancer localjobs" data-id="localjobs">
-          <a href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
-        </div>
-        <div id="localjobs" class="localjobs expandables" style="display: none">
-          <h1 style="margin: 0px">This is the hidden text</h1>
+          <button type="button" class="button-clear link link-general" style="font-size: 64px; color: white">
+            {{>ionIcon icon="ios-circle-filled"}}
+          </button>
+          <br/>
+          <br/>
         </div>
 
-        <div class="snaplancer buildmystartup" data-id="buildmystartup">
-          <a href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
+        <!-- Local jobs -->
+        <div class="snaplancer snap-title localjobs" data-id="localjobs" style="padding-top: 30px">
+          <img src="/camera.png" height="70" class="expandables localjobs" style="display: none">
+          <br/>
+          SnapLancer Local Jobs
         </div>
-        <div id="buildmystartup" class="buildmystartup expandables" style="display: none">
-          <h1 style="margin: 0px">This is the hidden text</h1>
+        <div class="expandables localjobs" style="display: none" data-id="localjobs">
+          <div class="explanation">
+            - Make a short video about what you want<br/>
+            - Describe 3 key milestones for the project<br/>
+            - Use simple language
+          </div>
+          <button type="button" class="button-clear link link-localjobs" style="font-size: 64px; color: white">
+            {{>ionIcon icon="ios-circle-filled"}}
+          </button>
+          <br/>
+          <br/>
         </div>
 
-        <div class="snaplancer designers" data-id="designers">
-          <a href="{{pathFor 'camera'}}"><div class="snap-title"> Hire a SnapLancer </div></a>
+        <!-- BuildMyStartup -->
+        <div class="snaplancer snap-title buildmystartup" data-id="buildmystartup" style="padding-top: 30px">
+          <img src="/camera.png" height="70" class="expandables buildmystartup" style="display: none">
+          <br/>
+          SnapLancer Build My Startup
+        </div>
+        <div class="expandables buildmystartup" style="display: none" data-id="buildmystartup">
+          <div class="explanation">
+            - Make a short video about what you want<br/>
+            - Describe 3 key milestones for the project<br/>
+            - Use simple language
+          </div>
+          <button type="button" class="button-clear link link-buildmystartup" style="font-size: 64px; color: white">
+            {{>ionIcon icon="ios-circle-filled"}}
+          </button>
+          <br/>
+          <br/>
+        </div>
+
+        <!-- Designers -->
+        <div class="snaplancer snap-title designers" data-id="designers" style="padding-top: 30px">
+          <img src="/camera.png" height="70" class="expandables designers" style="display: none">
+          <br/>
+          SnapLancer Designers
+        </div>
+        <div class="expandables designers" style="display: none" data-id="designers">
+          <div class="explanation">
+            - Make a short video about what you want<br/>
+            - Describe 3 key milestones for the project<br/>
+            - Use simple language
+          </div>
+          <button type="button" class="button-clear link link-designers" style="font-size: 64px; color: white">
+            {{>ionIcon icon="ios-circle-filled"}}
+          </button>
+          <br/>
+          <br/>
         </div>
 
     {{/ionContent}}
