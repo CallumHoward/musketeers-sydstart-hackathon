@@ -30,3 +30,7 @@ ecmascript
 tendo:freelancer-meteor
 edgee:slingshot
 insecure
+<<<<<<< Updated upstream
+=======
+autopublish
+>>>>>>> Stashed changes
