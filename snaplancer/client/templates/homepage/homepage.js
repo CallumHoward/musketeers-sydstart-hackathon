@@ -1,5 +1,5 @@
 Template.homepage.events({
-  'click .link-general': function(e) {
+  'click .link': function(e) {
     e.preventDefault();
     e.stopPropagation();
 
