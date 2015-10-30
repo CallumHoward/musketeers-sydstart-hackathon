@@ -18,6 +18,9 @@ Template.messages.helpers({
   isUser: function () {
     return this.from === 'user';
   },
+  isImage: function () {
+    return this.type === 'image';
+  },
   getMessages: function () {
     return Messages.find().fetch();
   }

@@ -19,7 +19,16 @@
               <li class="message message-right">{{content}}</li>
             {{/if}}
             {{#unless isUser}}
-              <li class="message message-left">{{content}}</li>
+              {{#if isImage}}
+                <li class="message message-left" style="text-align:center">
+                  <img class="messages-image" src="{{content}}" alt="logo" height="75" />
+                  <div class="messages-bool messages-green"> YES </div>
+                  <div class="messages-bool messages-red"> NO </div>
+                </li>
+              {{/if}}
+              {{#unless isImage}}
+                <li class="message message-left">{{content}}</li>
+              {{/unless}}
             {{/unless}}
           {{/each}}
         </ol>
