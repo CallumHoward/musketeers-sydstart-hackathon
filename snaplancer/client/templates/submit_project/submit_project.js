@@ -44,6 +44,7 @@ function onFileReadSuccess(fileEntry) {
 
         // Post project (this helper invokes the needed backend stuff)
         Helpers.postProjectToFreelancer(email, downloadUrl);
+        Router.go('homepage');
       });
     }
 

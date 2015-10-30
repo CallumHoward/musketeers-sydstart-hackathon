@@ -12,14 +12,11 @@
           <div class="content has-header">
             {{#ionList}}
             <div class="list">
-              {{#ionItem}}
-                <a href="{{pathFor 'homepage'}}">Home</a>
-              {{/ionItem}}
-              {{#ionItem}}
-                <a href="{{pathFor 'messages'}}">Messages</a>
-              {{/ionItem}}
-              <div class="item item-icon-right" data-ion-menu-close>
-                Close Me {{> ionIcon icon="ios-arrow-right"}}
+              <div class="item home item-icon-right" data-ion-menu-close>
+                Home {{> ionIcon icon="ios-home"}}
+              </div>
+              <div class="item messenger item-icon-right" data-ion-menu-close>
+                Messenger {{> ionIcon icon="ios-chatboxes"}}
               </div>
             </div>
             {{/ionList}}
