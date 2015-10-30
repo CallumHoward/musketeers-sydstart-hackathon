@@ -2,19 +2,23 @@
 
 .snaplancer {
   background-color: rgb(255, 214, 0);
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
-  min-height: 180px;
+  height: 150px;
   color: white !important;
+}
 
+.expandables {
+  text-align: center;
+  color: white !important;
 }
 
 .snap-text {
   height: 100%;
 }
-.general {
-  background-color: rgb(255, 214, 0);
 
+.general {
+  background-color: #F5AE23;
 }
 
 .sgeneral {
