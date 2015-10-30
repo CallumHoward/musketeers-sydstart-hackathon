@@ -6,11 +6,16 @@
 
 
 //Set global variable values
-$main-color: #1c6ea5;
+$main-color: #F5AE23;
 
 //Import core ionic files
 @import 'client/stylesheets/meteoric_ionic-sass/ionic';
 @import 'client/stylesheets/meteoric_ionicons-sass/ionicons';
+
+.ionic-body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
 
 //Container for map on Map Tracking Page
 .map-container {
@@ -30,3 +35,19 @@ a {
   items below
 
 *******************************************************/
+
+.color-primary {
+  background-color: $main-color;
+}
+
+.title {
+  color: white;
+}
+
+.bar {
+
+}
+
+.button.button-block, .button.button-full {
+  margin-top: 0px;
+}

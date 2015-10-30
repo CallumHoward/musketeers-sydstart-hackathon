@@ -1,6 +1,29 @@
 #user-info-form {
   padding: 40px;
-  margin-top: 160px;
+  // margin-top: 160px;
   margin-bottom: 15px;
   text-align: center;
+}
+
+.button.button-full {
+  margin-top: 0px;
+}
+
+.submit-info {
+  text-align: center;
+  padding: 40px 40px;
+  color: rgb(147, 147, 147);
+
+  h3 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 900;
+    color: rgb(147, 147, 147);
+  }
+
+
+
+}
+
+.submit-info hr {
+  border-top: 1px solid #e3e3e3;
 }

@@ -12,6 +12,23 @@ Template.homepage.events({
       console.log('Not on mobile, no camera');
     }
   },
+  'click .snaplancer': function(e) {
+    e.preventDefault();
+    var dataId = $(e.target).data('id');
+
+    // Hide previous
+    $('#'+Session.get('currentlyExpanded')).slideUp('fast');
+
+    // Dont expand anything if user clicks on already expanded field
+    if (Session.get('currentlyExpanded') === dataId) {
+      delete Session.keys.currentlyExpanded;
+      return;
+    }
+
+    // Expand new one
+    $('#'+dataId).slideDown('fast');
+    Session.set('currentlyExpanded', dataId);
+  }
 });
 
 function captureSuccess(mediaFiles) {
@@ -25,4 +42,3 @@ function captureError(error) {
   console.log('Error capturing media!!!');
   console.log(error);
 }
-
