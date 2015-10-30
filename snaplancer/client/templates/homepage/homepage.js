@@ -45,3 +45,7 @@ function captureError(error) {
   console.log('Error capturing media!!!');
   console.log(error);
 }
+
+Template.homepage.onRendered( () => {
+  $('.snaplancer.general').click();
+});
